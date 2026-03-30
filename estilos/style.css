@@ -52,3 +52,19 @@ article h2 {color: var(--destaque); margin-bottom: 10px;}
 article#video .video-contain {position: relative; width: 100%; margin: auto; aspect-ratio: 16/9;}
 
 .video-contain iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;}
+
+#habil-contain {display: grid; grid-template-columns: 1fr; gap: 30px;}
+
+#habil-contain .info {display: flex; justify-content: space-between; align-items: center;}
+
+#habil-contain .nome {font-weight: bold; color: var(--texto);}
+
+#habil-contain .porc {font-weight: bold; color: var(--destaque);}
+
+#habil-contain .barra {width: 100%; background-color: var(--fundo-principal); height: 8px; border-radius: 4px;}
+
+#habil-contain .prog {height: 100%; background-color: var(--destaque-inverso);}
+
+@media screen and (min-width: 768px) {
+  #habil-contain {grid-template-columns: 1fr 1fr;}
+}
