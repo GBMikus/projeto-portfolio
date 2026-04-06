@@ -75,6 +75,24 @@ article#video .video-contain {position: relative; width: 100%; margin: auto; asp
 
 #form-contain .instit {color: var(--destaque-inverso); font-size: 1.1em;}
 
+#proj-contain {display: flex; flex-direction: column-reverse; gap: 20px;}
+
+#proj-contain .proj {display: flex; flex-direction: column; gap: 15px; background-color: var(--fundo-principal); padding: 10px; border-radius: 8px; border-left: 5px solid var(--destaque-inverso);}
+
+#proj-contain .proj:hover {border-color: var(--destaque); border-left-width: 15px; cursor: pointer; transition: border-color 0.5s, border-width 0.5s;}
+
+#proj-contain .foto {width: 100%; aspect-ratio: 16/9; object-fit: cover; overflow: hidden; border-radius: 8px;}
+
+footer {background-color: var(--destaque); color: var(--texto-inverso); text-align: center; padding: 15px;}
+
+footer a {color: var(--destaque-inverso); text-decoration: none; font-weight: bold;}
+
+footer a:hover {color: var(--destaque-inverso); }
+
 @media screen and (min-width: 768px) {
   #habil-contain {grid-template-columns: 1fr 1fr;}
+
+  #proj-contain .proj {flex-direction: row-reverse; justify-content: space-between;}
+
+  #proj-contain .foto {aspect-ratio: 1/1; max-width: 20%; max-height: 200%;}
 }
