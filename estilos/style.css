@@ -90,6 +90,12 @@ footer a {color: var(--destaque-inverso); text-decoration: none; font-weight: bo
 footer a:hover {color: var(--destaque-inverso); }
 
 @media screen and (min-width: 768px) {
+  main {grid-template-columns: auto 300px 1fr auto;}
+
+  section#ficha {grid-column: 2/3; height: fit-content; position: sticky; top: 65px;}
+
+  section#detalhes {grid-column: 3/4;}
+
   #habil-contain {grid-template-columns: 1fr 1fr;}
 
   #proj-contain .proj {flex-direction: row-reverse; justify-content: space-between;}
